@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero_section{
+    background-image: url("images/heroSectionBackground.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 60vh;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 120px;    
+    font-size: 14px;
+}
+
+.navbar__linkmenu{
+    display: flex;
+    gap: 20px;
+    font-size: 17px;
+}
+
+.user{
+    height: 27px;
+    width: 27px;
+    border-radius: 100%;
+    border: solid 1px;    
+    padding: 5px 5px;
+    display: none;
+}
+
+.hero__container{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.hero__container_logo{
+    height: 3.75rem;
+}
+
+.hero__container h1{
+    font-size: 2.15rem;
+    font-weight: 250;
+    text-align: center;
+}
+
+.hero__container_input{
+    background-color: white;
+    padding: 10px;
+    width: 48vw;
+    height: 50px;;
+    border-radius: 10px;
+    display: flex;
+    flex: 1, 2;
+    gap: 50px;
+}
+
+.hero__container_location{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-right: solid 2px #bebebe;
+}
+
+.hero__container_search{
+    border: none;
+    outline: none;
+    width: 100%;;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width:600px) {
+    .navbar{
+        padding: 20px 20px;
+    }
+
+    .user{
+        display: flex;
+    }
+
+    .link{
+        display: none;
+    }
+    
+    .hero_section{
+        min-height: 80vh;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .hero__container_input{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        background: transparent;
+        border: none;
+        gap: 10px;
+    }
+
+    .hero__container_location,
+    .hero__container_search{
+        border-radius: 8px;
+        border: none;
+        padding-left: 20px; 
+    }
+}
+
+
+

@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- title -->
-    <link rel="icon" href="https://en.wikipedia.org/wiki/File:Zomato_logo.png"/>
-    <title>Zomato</title>    
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
+      type="image/x-icon"
+    />
+    <title>Zomato</title>
 
     <!-- css -->
     <link rel="stylesheet" href="styles.css" />
@@ -29,5 +33,44 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <section class="hero_section">
+      <header>
+        <nav class="navbar">
+          <div class="navbar__linkapp">
+            <a href="#"
+              ><i class="fa-solid fa-mobile-screen"></i> Get the App</a
+            >
+          </div>
+          <div class="navbar__linkmenu">
+            <a href="#" class="link">Investor relations</a>
+            <a href="#" class="link">Add restraunt</a>
+            <a href="#" class="link">Log in</a>
+            <a href="#" class="link">Sign up</a>
+            <a href="#" class="user"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </nav>
+      </header>
+      <div class="hero__container">
+        <img
+          class="hero__container_logo"
+          src="images/heroSectionLogo.png"
+          alt=" "
+        />
+        <h1>Discover the best food & drinks in Kolkata</h1>
+        <div class="hero__container_input">
+          <input
+            class="hero__container_location"
+            placeholder="Kolkata"
+            type="text"
+          />
+          <input
+            class="hero__container_search"
+            placeholder="Search for a restraunt, cuisine or a dish"
+            type="text"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
