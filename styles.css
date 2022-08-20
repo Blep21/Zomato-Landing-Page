@@ -308,6 +308,10 @@ input[type="email"] {
   border: 1px solid #bebebe;
 }
 
+.email_button #btn::after{
+  content: " App Link";
+}
+
 button[type="submit"] {
   border-radius: 10px;
   height: 45px;
@@ -461,13 +465,9 @@ button[type="submit"]:active{
   color: #7e7e7e;
 }
 
-
-
-
-
 @media only screen and (max-width: 600px) {
   .navbar {
-    padding: 20px 20px;
+    padding: 20px 10px;
   }
 
   .user {
@@ -478,14 +478,23 @@ button[type="submit"]:active{
     display: none;
   }
 
-  .hero_section {
-    min-height: 80vh;
+  .hero__container{
+    gap: 20px;
+  }
+
+  .hero__container_logo{
+    height: 30px;
+  }
+
+  .hero__container h1{
+    padding: 10px;
+    font-size: 20px;
   }
 
   .hero__input {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     background: transparent;
     gap: 10px;
   }
@@ -503,4 +512,219 @@ button[type="submit"]:active{
     border: none;
   }
 
+  .main {
+    padding: 10px;
+    width: 100%;
+    gap: 10px;
+    margin: 1rem auto;    
+    justify-content: left;
+  }
+  
+  .main_card {
+    width: 9rem;
+    align-items: left;
+    height: 10rem;
+  }
+  
+  .main_card img {
+    height: 100px;
+  }
+  
+  .card_content {
+    padding: 5px;
+  }
+  
+  .card_content h2 {
+    font-size: 16px;
+  }
+  
+  .main_card .card_content p {
+    font-size: 12px;
+  }
+
+  .collection {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .collection h1 {
+    font-size: 22px;
+  }
+
+  .collection_head {
+    flex-direction: column;
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  .collection_head_link {
+    font-size: 12px;
+  }
+
+  .collection_card {
+    padding-top: 30px;
+  }
+
+  .card {
+    height: 200px;
+    width: 48%;
+  }
+
+  .card_content h3 {
+    font-size: 12px;
+  }
+
+  .card_content p {
+    font-size: 11px;
+  }  
+  
+  .localities {
+    padding: 10px 10px;
+    width: 100%;
+  }
+  
+  .local_head {
+    font-weight: 100;
+    font-size: 22px;
+  }
+  
+  .local_card_container {
+    padding: 30px 0px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .local_content h3{
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  .local_content p{
+    font-size: 16px;
+    color: #3a3a3a;
+  }
+
+  .banner {
+
+    padding: 10px;
+  }
+  
+  .mobile_banner {
+    display: none;
+  }
+
+  .banner_info {
+    width: 100%;
+  }
+
+  .banner_info h1 {
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+
+  input[type="radio"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .email_button{
+    gap: 5px;
+  }
+
+  input[type="email"] {
+    width: 180px;    
+  }
+
+  .email_button #btn::after{
+    content: "";
+  }
+
+  #btn{
+    padding-right: 10px;
+    width: 100px;
+  }
+
+  .email_button {
+    display: flex;
+    gap: 5px;
+  }
+
+  .app_p{
+    display: flex;
+    align-items: center;
+  }
+
+  .img_link {
+    gap: 10px;
+  }
+
+  .options{
+    padding: 20px;
+    width: 105%;
+  }
+
+  .options h1{
+    font-size: 22px;
+  }
+  
+  .options_collection{
+    padding-top: 10px;    
+    gap: 10px;
+    width: 95%;
+    font-size: 16px;
+  }
+
+  .footer{
+    width: 105%;
+    background-color: #fafafa;
+    padding: 50px 10px;
+  }
+
+  .footer_head{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: none;
+  }
+
+  .footer_head img{
+    height: 30px;
+    width: 140px;
+  }
+
+  .country button img{
+    width: 30px;
+  }
+
+  .footer_container{
+    padding-right: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .social_links img{
+    height: 30px;
+    width: 30px;
+  }
+
+  .social_links { 
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-bottom: 10px;
+  }
+
+  .footer_img{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .footer p{
+    font-size: 12px;
+  } 
+  
 }
